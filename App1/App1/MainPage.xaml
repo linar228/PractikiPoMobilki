@@ -29,8 +29,8 @@
                 </StackLayout>
 
                 <FlexLayout  Direction="Row" JustifyContent="SpaceBetween">
-                    <Button Text="Зарегистрироваться" BorderColor="Black" HeightRequest="40" WidthRequest="190"/>
-                    <Button Text="Войти" BorderColor="Black" HeightRequest="40" WidthRequest="130"/>
+                    <Button x:Name="BReg" Text="Зарегистрироваться" BorderColor="Black" HeightRequest="40" WidthRequest="190" Clicked="BReg_Clicked"/>
+                    <Button x:Name="BLogin" Text="Войти" BorderColor="Black" HeightRequest="40" WidthRequest="130" Clicked="BLogin_Clicked"/>
                 </FlexLayout>
 
             </StackLayout>

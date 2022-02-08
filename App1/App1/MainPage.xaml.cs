@@ -14,5 +14,15 @@ namespace App1
         {
             InitializeComponent();
         }
+
+        private void BLogin_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BReg_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
