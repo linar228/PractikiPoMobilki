@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage">
+    <ScrollView>
+
+        <FlexLayout Direction="Column" JustifyContent="SpaceAround" AlignContent="Center" >
+            <StackLayout >
+                <Frame CornerRadius="200" Padding="0"
+           IsClippedToBounds="True" HeightRequest="270" Margin="60, 0">
+                    <Image Source="drawable/logo.png" HorizontalOptions="Center" HeightRequest="300" WidthRequest="300" />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Margin="40" Spacing="50">
+
+                <StackLayout>
+                    <Label Text="Логин"/>
+                    <Frame BorderColor="Black" Padding="0">
+                        <Entry/>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Пароль"/>
+                    <Frame BorderColor="Black" Padding="0">
+                        <Entry IsPassword="True"/>
+                    </Frame>
+                </StackLayout>
+
+                <FlexLayout  Direction="Row" JustifyContent="SpaceBetween">
+                    <Button Text="Зарегистрироваться" BorderColor="Black" HeightRequest="40" WidthRequest="190"/>
+                    <Button Text="Войти" BorderColor="Black" HeightRequest="40" WidthRequest="130"/>
+                </FlexLayout>
+
+            </StackLayout>
+        </FlexLayout>
+    </ScrollView>
+
+</ContentPage>
