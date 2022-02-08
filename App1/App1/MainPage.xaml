@@ -16,15 +16,15 @@
 
                 <StackLayout>
                     <Label Text="Логин"/>
-                    <Frame BorderColor="Black" Padding="0">
-                        <Entry/>
+                    <Frame BorderColor="black" CornerRadius="0" >
+                        <Entry x:Name="LoginEntry" Margin="-23" HeightRequest="40" />
                     </Frame>
                 </StackLayout>
 
                 <StackLayout>
                     <Label Text="Пароль"/>
-                    <Frame BorderColor="Black" Padding="0">
-                        <Entry IsPassword="True"/>
+                    <Frame BorderColor="black" CornerRadius="0" >
+                        <Entry x:Name="PasswordEntry" Margin="-23" IsPassword="True" HeightRequest="40"/>
                     </Frame>
                 </StackLayout>
 
