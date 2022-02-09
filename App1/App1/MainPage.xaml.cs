@@ -21,7 +21,7 @@ namespace App1
 
         private async void BLogin_Clicked(object sender, EventArgs e)
         {
-           // await Navigation.PushAsync(new RegisterPage());
+           await Navigation.PushAsync(new ProjectPage());
         }
 
         private async void BReg_Clicked(object sender, EventArgs e)

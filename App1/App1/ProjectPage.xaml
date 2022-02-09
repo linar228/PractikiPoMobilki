@@ -11,7 +11,7 @@
 
     <ScrollView>
         <FlexLayout  Direction="Column" >
-            <Button x:Name="Project_1" Text="Проект 1" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
+            <Button x:Name="Project_1" Text="Проект 1" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None" Clicked="Project_1_Clicked"/>
             <Button x:Name="Project_2" Text="Проект 2" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
             <Button x:Name="Project_3" Text="Проект 3" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
             <Button x:Name="Project_4" Text="Проект 4" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
@@ -31,6 +31,4 @@
             <Button x:Name="Project_18" Text="Проект 18" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
         </FlexLayout>
     </ScrollView>
-
-
 </ContentPage>
