@@ -14,13 +14,11 @@
     <Compile Remove="RegisterPageDetail.xaml.cs" />
     <Compile Remove="RegisterPageFlyout.xaml.cs" />
     <Compile Remove="RegisterPageFlyoutMenuItem.cs" />
-    <Compile Remove="View1.xaml.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Remove="RegisterPageDetail.xaml" />
     <EmbeddedResource Remove="RegisterPageFlyout.xaml" />
-    <EmbeddedResource Remove="View1.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,6 +27,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="ProjectPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="RegPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

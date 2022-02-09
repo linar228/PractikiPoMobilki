@@ -10,7 +10,7 @@
             TextColor="White"
             HorizontalOptions="Center"/>
     </NavigationPage.TitleView>
-    <StackLayout Spacing="65" Margin="40, 50" >
+    <StackLayout Spacing="50" Margin="40, 40" >
         <StackLayout>
             <Label Text="E-mail" TextColor="black"/>
             <Frame BorderColor="black" CornerRadius="0" >
@@ -39,6 +39,6 @@
             </Frame>
         </StackLayout>
         
-        <Button x:Name="RegBtn" FontSize="12" Text="Зарегистрироваться" Clicked="RegBtn_Clicked"  TextTransform="None" />
+        <Button x:Name="RegBtn" FontSize="12" Text="Зарегистрироваться" Clicked="RegBtn_Clicked"  TextTransform="None" BorderColor="Black" />
     </StackLayout>
 </ContentPage>

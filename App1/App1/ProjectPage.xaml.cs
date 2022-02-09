@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace App1
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class RegPage : ContentPage
+    public partial class ProjectPage : ContentPage
     {
-        public RegPage()
+        public ProjectPage()
         {
             InitializeComponent();
-        }
-
-        private async void RegBtn_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ProjectPage());
         }
     }
 }

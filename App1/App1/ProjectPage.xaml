@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.ProjectPage">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" >
+            <Label FontSize="20" Text="Проекты" TextColor="White"  HorizontalOptions="CenterAndExpand"  Margin="-45, 0, 0, 0"/>
+            <ImageButton Source="plus.png" WidthRequest="25" HeightRequest="25" Margin="0, 0, 12, 0" BackgroundColor="Transparent"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <ScrollView>
+        <FlexLayout  Direction="Column" >
+            <Button x:Name="Project_1" Text="Проект 1" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
+            <Button x:Name="Project_2" Text="Проект 2" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
+            <Button x:Name="Project_3" Text="Проект 3" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
+            <Button x:Name="Project_4" Text="Проект 4" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
+            <Button x:Name="Project_5" Text="Проект 5" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
+            <Button x:Name="Project_6" Text="Проект 6" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
+            <Button x:Name="Project_7" Text="Проект 7" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
+            <Button x:Name="Project_8" Text="Проект 8" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
+            <Button x:Name="Project_9" Text="Проект 9" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
+            <Button x:Name="Project_10" Text="Проект 10" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
+            <Button x:Name="Project_11" Text="Проект 11" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
+            <Button x:Name="Project_12" Text="Проект 12" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
+            <Button x:Name="Project_13" Text="Проект 13" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
+            <Button x:Name="Project_14" Text="Проект 14" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
+            <Button x:Name="Project_15" Text="Проект 15" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
+            <Button x:Name="Project_16" Text="Проект 16" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
+            <Button x:Name="Project_17" Text="Проект 17" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
+            <Button x:Name="Project_18" Text="Проект 18" TextColor="Black" HeightRequest="55" BackgroundColor="White" BorderColor="Black" BorderWidth="2" Margin="0,5" TextTransform="None"/>
+        </FlexLayout>
+    </ScrollView>
+
+
+</ContentPage>
