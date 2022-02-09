@@ -7,19 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App1
+namespace App1.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ProjectPage : ContentPage
+    public partial class TabsPage : TabbedPage
     {
-        public ProjectPage()
+        public TabsPage()
         {
             InitializeComponent();
-        }
-
-        private void Project_1_Clicked(object sender, EventArgs e)
-        {
-
         }
     }
 }
