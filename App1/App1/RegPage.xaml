@@ -14,7 +14,7 @@
         <StackLayout>
             <Label Text="E-mail" TextColor="black"/>
             <Frame BorderColor="black" CornerRadius="0" >
-                <Entry x:Name="E-Mail" Margin="-23" HeightRequest="40" />
+                <Entry x:Name="E_Mail" Margin="-23" HeightRequest="40" />
             </Frame>
         </StackLayout>
 
