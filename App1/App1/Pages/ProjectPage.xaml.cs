@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App1.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +20,7 @@ namespace App1
 
         private async void Project_1_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainPage());
+            await Navigation.PushAsync(new TabsPage());
         }
     }
 }
