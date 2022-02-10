@@ -3,10 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.ContactProjectPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Margin="30">
+            <Label Text="Телефон" TextColor="black"/>
+            <Frame BorderColor="black" CornerRadius="0" >
+                <Entry x:Name="Phone" Margin="-23" HeightRequest="40" />
+            </Frame>
+            <Label Text="Телефон" TextColor="black"/>
+            <Frame BorderColor="black" CornerRadius="0" >
+                <Entry x:Name="Phone_2" Margin="-23" HeightRequest="40" />
+            </Frame>
+            <Label Text="E-mail" TextColor="black"/>
+            <Frame BorderColor="black" CornerRadius="0" >
+                <Entry x:Name="E_Mail" Margin="-23" HeightRequest="40" />
+            </Frame>
+            <Label Text="Адрес" TextColor="black"/>
+            <Frame BorderColor="black" CornerRadius="0" >
+                <Entry x:Name="Adress" Margin="-23" HeightRequest="40" />
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
