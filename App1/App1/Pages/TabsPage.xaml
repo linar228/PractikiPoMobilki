@@ -3,6 +3,14 @@
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:local="clr-namespace:App1"
             x:Class="App1.Pages.TabsPage">
+    <NavigationPage.TitleView>
+        <Label
+            Text="Проект 1"
+            Margin="-70, 0, 0, 0"
+            FontSize="20"
+            TextColor="White"
+            HorizontalOptions="Center"/>
+    </NavigationPage.TitleView>
     <TabbedPage.Children>
         <local:InfoProjectPage Title="О проекте"/>
         <local:ImgProjectPage Title="Картинки"/>
