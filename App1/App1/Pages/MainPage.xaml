@@ -18,8 +18,8 @@
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" Margin="30, 40, 50, 40">
-                <Button Text="Зарегистрироваться" CornerRadius="150" BackgroundColor="#00b2ff" TextColor="White" x:Name="BRegistration" WidthRequest="160" FontSize="12" Margin="0,5,11,0"/>
-                <Button Text="Войти" CornerRadius="200" BackgroundColor="#00b2ff" TextColor="White" x:Name="BLogin" HeightRequest="60" WidthRequest="149" FontSize="12" Margin="11,5,0,0"/>
+                <Button Text="Зарегистрироваться" CornerRadius="150" BackgroundColor="#00b2ff" TextColor="White" x:Name="BRegistration" WidthRequest="160" FontSize="12" Margin="0,5,11,0" Clicked="BReg_Clicked"/>
+                <Button Text="Войти" CornerRadius="200" BackgroundColor="#00b2ff" TextColor="White" x:Name="BLogin" HeightRequest="60" WidthRequest="149" FontSize="12" Margin="11,5,0,0" Clicked="BLogin_Clicked"/>
             </StackLayout>
         </FlexLayout>
     </ScrollView>
