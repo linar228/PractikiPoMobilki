@@ -1,27 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App1.MainPage">
-    <ScrollView>
+             x:Class="App1.MainPage"
+             NavigationPage.HasNavigationBar="False">
 
-        <FlexLayout Direction="Column" JustifyContent="SpaceAround" AlignContent="Center" >
-            <StackLayout >
-                <Frame CornerRadius="200" Padding="0"
+    <FlexLayout Direction="Column" JustifyContent="SpaceAround" AlignContent="Center" >
+        <StackLayout >
+            <Frame CornerRadius="200" Padding="0"
            IsClippedToBounds="True" HeightRequest="270" Margin="60, 0">
-                    <Image Source="drawable/logo.png" HorizontalOptions="Center" HeightRequest="300" WidthRequest="300" />
-                </Frame>
-            </StackLayout>
+                <Image Source="drawable/logo.png" HorizontalOptions="Center" HeightRequest="300" WidthRequest="300" />
+            </Frame>
+        </StackLayout>
 
-            <StackLayout VerticalOptions="Center" Margin="0, 70, 0, 0">
-                <Entry Placeholder="Логин" x:Name="Login" Text="{Binding UserLogin}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
-                <Entry Placeholder="Пароль" Margin="40, 30, 40, 40" Text="{Binding UserPassword}" x:Name="Password" IsPassword="True" BackgroundColor="#e8e8e8" HeightRequest="60"/>
-            </StackLayout>
+        <StackLayout VerticalOptions="Center" Margin="0, 70, 0, 0">
+            <Entry Placeholder="Логин" x:Name="Login" Text="{Binding UserLogin}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
+            <Entry Placeholder="Пароль" Margin="40, 30, 40, 40" Text="{Binding UserPassword}" x:Name="Password" IsPassword="True" BackgroundColor="#e8e8e8" HeightRequest="60"/>
+        </StackLayout>
 
-            <StackLayout Orientation="Horizontal" Margin="30, 40, 50, 40">
-                <Button Text="Зарегистрироваться" CornerRadius="150" BackgroundColor="#00b2ff" TextColor="White" x:Name="BRegistration" WidthRequest="160" FontSize="12" Margin="0,5,11,0" Clicked="BReg_Clicked"/>
-                <Button Text="Войти" CornerRadius="200" BackgroundColor="#00b2ff" TextColor="White" x:Name="BLogin" HeightRequest="60" WidthRequest="149" FontSize="12" Margin="11,5,0,0" Clicked="BLogin_Clicked"/>
-            </StackLayout>
-        </FlexLayout>
-    </ScrollView>
+        <StackLayout Orientation="Horizontal" Margin="30, 40, 50, 40">
+            <Button Text="Зарегистрироваться" CornerRadius="150" BackgroundColor="#00b2ff" TextColor="White" x:Name="BRegistration" WidthRequest="160" FontSize="12" Margin="0,5,11,0" Clicked="BReg_Clicked"/>
+            <Button Text="Войти" CornerRadius="200" BackgroundColor="#00b2ff" TextColor="White" x:Name="BLogin" HeightRequest="60" WidthRequest="149" FontSize="12" Margin="11,5,0,0" Clicked="BLogin_Clicked"/>
+        </StackLayout>
+    </FlexLayout>
 
 </ContentPage>

@@ -10,35 +10,25 @@
             TextColor="White"
             HorizontalOptions="Center"/>
     </NavigationPage.TitleView>
-    <StackLayout Spacing="50" Margin="40, 40" >
-        <StackLayout>
-            <Label Text="E-mail" TextColor="black"/>
-            <Frame BorderColor="black" CornerRadius="0" >
-                <Entry x:Name="E_Mail" Margin="-23" HeightRequest="40" />
-            </Frame>
+    <StackLayout Spacing="3" Margin="40, 40" >
+        <StackLayout Margin="-40, -10">
+            <Entry Placeholder="Логин" x:Name="Login" Text="{Binding UserLogin}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
         </StackLayout>
 
-        <StackLayout>
-            <Label Text="Логин" TextColor="black"/>
-            <Frame BorderColor="black" CornerRadius="0" >
-                <Entry x:Name="Login" Margin="-23" HeightRequest="40" />
-            </Frame>
+        <StackLayout Margin="-40, 0">
+            <Entry Placeholder="E-mail" x:Name="E-mail" Text="{Binding UserEmail}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
         </StackLayout>
 
-        <StackLayout>
-            <Label Text="Пароль" TextColor="black"/>
-            <Frame BorderColor="black" CornerRadius="0" >
-                <Entry x:Name="Pas" Margin="-23" IsPassword="True" HeightRequest="40" />
-            </Frame>
+        <StackLayout Margin="-40, 0">
+            <Entry Placeholder="Пароль" x:Name="Pas" Text="{Binding UserPassword}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0" IsPassword="True"/>
         </StackLayout>
 
-        <StackLayout>
-            <Label Text="Пароль" TextColor="black"/>
-            <Frame BorderColor="black" CornerRadius="0" >
-                <Entry x:Name="PasConfirm" Margin="-23" IsPassword="True" HeightRequest="40" />
-            </Frame>
+        <StackLayout Margin="-40, 0">
+            <Entry Placeholder="Пароль" x:Name="PasConfirm" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0" IsPassword="True"/>
         </StackLayout>
-        
-        <Button x:Name="RegBtn" FontSize="12" Text="Зарегистрироваться" Clicked="RegBtn_Clicked"  TextTransform="None" BorderColor="Black" />
+
+        <StackLayout Margin="0,90,0,0">
+            <Button Text="Зарегистрироваться" CornerRadius="150" BackgroundColor="#00b2ff" TextColor="White" x:Name="BRegistration" WidthRequest="160" FontSize="12" Margin="0,5,11,0" Clicked="RegBtn_Clicked"/>
+        </StackLayout>
     </StackLayout>
 </ContentPage>
