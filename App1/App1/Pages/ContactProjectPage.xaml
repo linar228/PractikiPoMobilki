@@ -3,31 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.ContactProjectPage">
     <ContentPage.Content>
-        <StackLayout Margin="40" Spacing="25">
-            <StackLayout>
-                <Label Text="Телефон" TextColor="black"/>
-                <Frame BorderColor="black" CornerRadius="0" >
-                    <Entry x:Name="Phone" Margin="-23" HeightRequest="40" />
-                </Frame>
-            </StackLayout>
-            <StackLayout>
-                <Label Text="Телефон" TextColor="black"/>
-                <Frame BorderColor="black" CornerRadius="0" >
-                    <Entry x:Name="Phone_2" Margin="-23" HeightRequest="40" />
-                </Frame>
-            </StackLayout>
-            <StackLayout>
-                <Label Text="E-mail" TextColor="black"/>
-                <Frame BorderColor="black" CornerRadius="0" >
-                    <Entry x:Name="E_Mail" Margin="-23" HeightRequest="40" />
-                </Frame>
-            </StackLayout>
-            <StackLayout>
-                <Label Text="Адрес" TextColor="black"/>
-                <Frame BorderColor="black" CornerRadius="0" >
-                    <Entry x:Name="Adress" Margin="-23" HeightRequest="40" />
-                </Frame>
-            </StackLayout>
+        <StackLayout Spacing="-5">
+            <Entry Placeholder="Телефон №1" x:Name="Phone" Text="{Binding UserPhone}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
+            <Entry Placeholder="E-mail" x:Name="E-mail" Text="{Binding UserEMail}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
+            <Entry Placeholder="Адрес" x:Name="Adress" Text="{Binding UserAdress}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
