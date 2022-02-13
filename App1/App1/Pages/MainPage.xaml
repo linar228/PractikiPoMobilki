@@ -12,27 +12,14 @@
                 </Frame>
             </StackLayout>
 
-            <StackLayout Margin="40" Spacing="50">
+            <StackLayout VerticalOptions="Center" Margin="0, 70, 0, 0">
+                <Entry Placeholder="Логин" x:Name="Login" Text="{Binding UserLogin}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
+                <Entry Placeholder="Пароль" Margin="40, 30, 40, 40" Text="{Binding UserPassword}" x:Name="Password" IsPassword="True" BackgroundColor="#e8e8e8" HeightRequest="60"/>
+            </StackLayout>
 
-                <StackLayout>
-                    <Label Text="Логин"/>
-                    <Frame BorderColor="black" CornerRadius="0" >
-                        <Entry x:Name="LoginEntry" Margin="-23" HeightRequest="40" />
-                    </Frame>
-                </StackLayout>
-
-                <StackLayout>
-                    <Label Text="Пароль"/>
-                    <Frame BorderColor="black" CornerRadius="0" >
-                        <Entry x:Name="PasswordEntry" Margin="-23" IsPassword="True" HeightRequest="40"/>
-                    </Frame>
-                </StackLayout>
-
-                <FlexLayout  Direction="Row" JustifyContent="SpaceBetween">
-                    <Button x:Name="BReg" Text="Зарегистрироваться" BorderColor="Black" HeightRequest="40" WidthRequest="190" Clicked="BReg_Clicked"/>
-                    <Button x:Name="BLogin" Text="Войти" BorderColor="Black" HeightRequest="40" WidthRequest="130" Clicked="BLogin_Clicked"/>
-                </FlexLayout>
-
+            <StackLayout Orientation="Horizontal" Margin="30, 40, 50, 40">
+                <Button Text="Зарегистрироваться" CornerRadius="150" BackgroundColor="#00b2ff" TextColor="White" x:Name="BRegistration" WidthRequest="160" FontSize="12" Margin="0,5,11,0"/>
+                <Button Text="Войти" CornerRadius="200" BackgroundColor="#00b2ff" TextColor="White" x:Name="BLogin" HeightRequest="60" WidthRequest="149" FontSize="12" Margin="11,5,0,0"/>
             </StackLayout>
         </FlexLayout>
     </ScrollView>
