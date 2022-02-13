@@ -22,5 +22,10 @@ namespace App1
         {
             await Navigation.PushAsync(new TabsPage());
         }
+
+        private async void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AddProjectPage());
+        }
     }
 }
