@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout Spacing="-5">
             <Entry Placeholder="Телефон №1" x:Name="Phone" Text="{Binding UserPhone}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
-            <Entry Placeholder="E-mail" x:Name="E-mail" Text="{Binding UserEMail}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
+            <Entry Placeholder="Email" x:Name="Email" Text="{Binding UserEMail}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
             <Entry Placeholder="Адрес" x:Name="Adress" Text="{Binding UserAdress}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
         </StackLayout>
     </ContentPage.Content>

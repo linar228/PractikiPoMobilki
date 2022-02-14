@@ -12,9 +12,11 @@ namespace App1.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TabsPage : TabbedPage
     {
-        public TabsPage()
+        public TabsPage(string projectName)
         {
             InitializeComponent();
+
+            Title = projectName;
         }
     }
 }

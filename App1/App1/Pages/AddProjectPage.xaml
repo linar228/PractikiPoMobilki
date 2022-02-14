@@ -10,7 +10,7 @@
                     <Entry Placeholder="Имя проекта" PlaceholderColor="Gray"  x:Name="ProjectName" TextColor="Black" Text="{Binding ProjectName}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 7, 40, 0"/>
                     <Editor BackgroundColor="#e8e8e" HeightRequest="200" Placeholder="Описание" x:Name="Title" TextColor="Black" Text="{Binding ProjectTitle}" PlaceholderColor="Gray" Margin="40,15, 40, 0"/>
                     <Entry Placeholder="Телефон №1" Margin="40,15,40,0" PlaceholderColor="Gray" TextColor="Black" Text="{Binding UserPhoneOne}" x:Name="PhoneOne" BackgroundColor="#e8e8e8" HeightRequest="60"/>
-                    <Entry Placeholder="E-mail" Margin="40,20,40,0" PlaceholderColor="Gray" TextColor="Black" Text="{Binding UserEmail}" x:Name="Email" BackgroundColor="#e8e8e8" HeightRequest="60"/>
+                    <Entry Placeholder="Email" Margin="40,20,40,0" PlaceholderColor="Gray" TextColor="Black" Text="{Binding UserEmail}" x:Name="Email" BackgroundColor="#e8e8e8" HeightRequest="60"/>
                     <Entry Placeholder="Адрес" Margin="40,15,40,0" PlaceholderColor="Gray" TextColor="Black" Text="{Binding UserAddress}" x:Name="Adress" BackgroundColor="#e8e8e8" HeightRequest="60"/>
                 </StackLayout>
 

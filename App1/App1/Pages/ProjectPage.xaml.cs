@@ -13,19 +13,30 @@ namespace App1
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ProjectPage : ContentPage
     {
+        public List<string> Projects { get; set; }
         public ProjectPage()
         {
             InitializeComponent();
+            Projects = new List<string>();
+            FillList();
+            this.BindingContext = this;
         }
-
-        private async void Project_1_Clicked(object sender, EventArgs e)
+        public void FillList()
         {
-            await Navigation.PushAsync(new TabsPage());
+            for (int i = 0; i < 20; i++)
+            {
+                Projects.Add($"Проект {i + 1}");
+            }
         }
 
         private async void ImageButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new AddProjectPage());
+        }
+
+        private async void lwProjects_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            await Navigation.PushAsync(new TabsPage(lwProjects.SelectedItem.ToString()));
         }
     }
 }

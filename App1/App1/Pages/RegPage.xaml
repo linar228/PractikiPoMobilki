@@ -16,7 +16,7 @@
         </StackLayout>
 
         <StackLayout Margin="-40, 0">
-            <Entry Placeholder="E-mail" x:Name="E-mail" Text="{Binding UserEmail}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
+            <Entry Placeholder="Email" x:Name="Email" Text="{Binding UserEmail}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
         </StackLayout>
 
         <StackLayout Margin="-40, 0">
