@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App1.Pages.AddProjectPage">
+             x:Class="App1.Pages.EditProjectPage">
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal">
-            <Label Margin="60, 0, 0, 0" FontSize="20" Text="Создать проект" TextColor="White" HorizontalOptions="Center"/>
+            <Label Margin="50, 0, 30, 0" FontSize="20" Text="Изменить проект" TextColor="White" HorizontalOptions="Center"/>
+            <ImageButton Source="trash.png" WidthRequest="25" HeightRequest="25" Margin="50, 0, 0, 0" BackgroundColor="Transparent"/>
         </StackLayout>
     </NavigationPage.TitleView>
     <ContentPage.Content>
@@ -20,7 +21,7 @@
 
                 <FlexLayout Direction="Row" JustifyContent="SpaceBetween" Margin="49, 65, 49, 40">
                     <Button Text="Отмена" CornerRadius="200" BackgroundColor="#00b2ff" TextColor="White" x:Name="BRemove" HeightRequest="49" WidthRequest="149" FontSize="15" Margin="0,15,11,0"/>
-                    <Button Text="Добавить" CornerRadius="200" BackgroundColor="#00b2ff" TextColor="White" x:Name="BAddProjece" HeightRequest="49" WidthRequest="149" FontSize="15" Margin="11,15,0,0"/>
+                    <Button Text="Изменить" CornerRadius="200" BackgroundColor="#00b2ff" TextColor="White" x:Name="BAddProjece" HeightRequest="49" WidthRequest="149" FontSize="15" Margin="11,15,0,0"/>
                 </FlexLayout>
             </StackLayout>
         </ScrollView>

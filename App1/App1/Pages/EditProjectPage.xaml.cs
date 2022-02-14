@@ -10,18 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace App1.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TabsPage : TabbedPage
+    public partial class EditProjectPage : ContentPage
     {
-        public TabsPage(string projectName)
+        public EditProjectPage()
         {
             InitializeComponent();
-
-            Title = projectName;
-        }
-
-        private async void ImageButton_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new EditProjectPage());
         }
     }
 }
