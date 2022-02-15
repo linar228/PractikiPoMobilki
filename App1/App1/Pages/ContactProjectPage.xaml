@@ -5,9 +5,9 @@
              Visual="Default">
     <ContentPage.Content>
         <StackLayout Spacing="-5">
-            <Entry Visual="Default" Placeholder="Телефон №1" x:Name="Phone" Text="{Binding UPhone}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
-            <Entry Visual="Default" Placeholder="Email" x:Name="Email" Text="{Binding UEMail}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
-            <Entry Visual="Default" Placeholder="Адрес" x:Name="Adress" Text="{Binding UAdress}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
+            <Entry Visual="Material" Placeholder="Телефон №1" x:Name="Phone" Text="{Binding Phone}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
+            <Entry Visual="Material" Placeholder="Email" x:Name="Email" Text="{Binding Email}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
+            <Entry Visual="Material" Placeholder="Адрес" x:Name="Adress" Text="{Binding Address}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,27 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App1.Pages.EditProjectPage">
-    <NavigationPage.TitleView>
-        <StackLayout Orientation="Horizontal">
-            <Label Margin="50, 0, 30, 0" FontSize="20" Text="Изменить проект" TextColor="White" HorizontalOptions="Center"/>
-            <ImageButton Source="trash.png" WidthRequest="25" HeightRequest="25" Margin="50, 0, 0, 0" BackgroundColor="Transparent"/>
-        </StackLayout>
-    </NavigationPage.TitleView>
+             x:Class="App1.Pages.EditProjectPage"
+             Visual="Default">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="trash.png" Priority="0" Order="Primary" x:Name="TEditingProject" Clicked="TEditingProject_Clicked"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
                 <StackLayout VerticalOptions="Center" Margin="0, 15, 0, 0">
-                    <Entry Placeholder="Имя проекта" PlaceholderColor="Gray"  x:Name="ProjectName" TextColor="Black" Text="{Binding ProjectName}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 7, 40, 0"/>
-                    <Editor BackgroundColor="#e8e8e" HeightRequest="200" Placeholder="Описание" x:Name="Title" TextColor="Black" Text="{Binding ProjectTitle}" PlaceholderColor="Gray" Margin="40,15, 40, 0"/>
-                    <Entry Placeholder="Телефон №1" Margin="40,15,40,0" PlaceholderColor="Gray" TextColor="Black" Text="{Binding UserPhoneOne}" x:Name="PhoneOne" BackgroundColor="#e8e8e8" HeightRequest="60"/>
-                    <Entry Placeholder="Email" Margin="40,20,40,0" PlaceholderColor="Gray" TextColor="Black" Text="{Binding UserEmail}" x:Name="Email" BackgroundColor="#e8e8e8" HeightRequest="60"/>
-                    <Entry Placeholder="Адрес" Margin="40,15,40,0" PlaceholderColor="Gray" TextColor="Black" Text="{Binding UserAddress}" x:Name="Adress" BackgroundColor="#e8e8e8" HeightRequest="60"/>
+                    <Entry Visual="Material" Placeholder="Имя проекта" PlaceholderColor="Gray"  x:Name="ProjectName" TextColor="Black" Text="{Binding Name}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 7, 40, 0"/>
+                    <Editor Visual="Material" BackgroundColor="#e8e8e" HeightRequest="200" Placeholder="Описание" x:Name="Title" TextColor="Black" Text="{Binding PTitle}" PlaceholderColor="Gray" Margin="40,15, 40, 0"/>
+                    <Entry Visual="Material" Placeholder="Телефон №1" Margin="40,15,40,0" PlaceholderColor="Gray" TextColor="Black" Text="{Binding Phone}" x:Name="PhoneOne" BackgroundColor="#e8e8e8" HeightRequest="60"/>
+                    <Entry  Visual="Material" Placeholder="Email" Margin="40,20,40,0" PlaceholderColor="Gray" TextColor="Black" Text="{Binding Email}" x:Name="Email" BackgroundColor="#e8e8e8" HeightRequest="60"/>
+                    <Entry Visual="Material" Placeholder="Адрес" Margin="40,15,40,0" PlaceholderColor="Gray" TextColor="Black" Text="{Binding Address}" x:Name="Adress" BackgroundColor="#e8e8e8" HeightRequest="60"/>
                 </StackLayout>
 
                 <FlexLayout Direction="Row" JustifyContent="SpaceBetween" Margin="49, 65, 49, 40">
-                    <Button Text="Отмена" CornerRadius="200" BackgroundColor="#00b2ff" TextColor="White" x:Name="BRemove" HeightRequest="49" WidthRequest="149" FontSize="15" Margin="0,15,11,0"/>
-                    <Button Text="Изменить" CornerRadius="200" BackgroundColor="#00b2ff" TextColor="White" x:Name="BAddProjece" HeightRequest="49" WidthRequest="149" FontSize="15" Margin="11,15,0,0"/>
+                    <Button Text="Отмена" CornerRadius="200" BackgroundColor="#00b2ff" TextColor="White" x:Name="BRemove" HeightRequest="49" WidthRequest="149" FontSize="15" Margin="0,15,11,0" Clicked="BRemove_Clicked"/>
+                    <Button Text="Изменить" CornerRadius="200" BackgroundColor="#00b2ff" TextColor="White" x:Name="BAddProjece" HeightRequest="49" WidthRequest="149" FontSize="15" Margin="11,15,0,0" Clicked="BAddProjece_Clicked"/>
                 </FlexLayout>
             </StackLayout>
         </ScrollView>
