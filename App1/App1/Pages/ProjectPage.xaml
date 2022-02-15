@@ -8,9 +8,7 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <ScrollView>
-            
-        
-        <ListView
+            <ListView
             x:Name="lwProject"
             ItemSelected="lwProject_ItemSelected"
             ItemsSource="{Binding}">

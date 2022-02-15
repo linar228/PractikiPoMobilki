@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App1.ContactProjectPage">
+             x:Class="App1.ContactProjectPage"
+             Visual="Default">
     <ContentPage.Content>
         <StackLayout Spacing="-5">
-            <Entry Placeholder="Телефон №1" x:Name="Phone" Text="{Binding UserPhone}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
-            <Entry Placeholder="Email" x:Name="Email" Text="{Binding UserEMail}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
-            <Entry Placeholder="Адрес" x:Name="Adress" Text="{Binding UserAdress}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
+            <Entry Visual="Default" Placeholder="Телефон №1" x:Name="Phone" Text="{Binding UPhone}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
+            <Entry Visual="Default" Placeholder="Email" x:Name="Email" Text="{Binding UEMail}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
+            <Entry Visual="Default" Placeholder="Адрес" x:Name="Adress" Text="{Binding UAdress}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

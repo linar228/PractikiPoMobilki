@@ -7,15 +7,15 @@
     </NavigationPage.TitleView>
     <StackLayout Spacing="3" Margin="40, 40" >
         <StackLayout Margin="-40, -10">
-            <Entry Placeholder="Логин" x:Name="Login" Text="{Binding UserLogin}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
+            <Entry Placeholder="Логин" x:Name="Login" Text="{Binding ULogin}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
         </StackLayout>
 
         <StackLayout Margin="-40, 0">
-            <Entry Placeholder="Email" x:Name="Email" Text="{Binding UserEmail}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
+            <Entry Placeholder="Email" x:Name="Email" Text="{Binding UEmail}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
         </StackLayout>
 
         <StackLayout Margin="-40, 0">
-            <Entry Placeholder="Пароль" x:Name="Pas" Text="{Binding UserPassword}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0" IsPassword="True"/>
+            <Entry Placeholder="Пароль" x:Name="Pas" Text="{Binding UPassword}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0" IsPassword="True"/>
         </StackLayout>
 
         <StackLayout Margin="-40, 0">
