@@ -1,17 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App1.ProjectPage">
-    <NavigationPage.TitleView>
-        <StackLayout Orientation="Horizontal" >
-            <Label FontSize="20" Text="Проекты" TextColor="White"  HorizontalOptions="CenterAndExpand"  Margin="-45, 0, 0, 0"/>
-            <ImageButton Source="plus.png" WidthRequest="25" HeightRequest="25" Margin="0, 0, 12, 0" BackgroundColor="Transparent" Clicked="ImageButton_Clicked"/>
-        </StackLayout>
-    </NavigationPage.TitleView>
-
-    <ScrollView>
-        <StackLayout>
-            <ListView x:Name="lwProjects" ItemsSource="{Binding Projects}" ItemSelected="lwProjects_ItemSelected" SeparatorColor="Black"/>
-        </StackLayout>
-    </ScrollView>
+             x:Class="App1.ProjectPage"
+             Title="Проекты">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="plus.png" Priority="0" Order="Primary" x:Name="AddProject" Clicked="AddProject_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            
+        
+        <ListView
+            x:Name="lwProject"
+            ItemSelected="lwProject_ItemSelected"
+            ItemsSource="{Binding}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <Label Padding="10" Text="{Binding Name}" TextColor="Black" FontSize="Medium"/>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        </ScrollView>
+    </ContentPage.Content>
+    
 </ContentPage>

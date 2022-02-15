@@ -13,12 +13,12 @@
         </StackLayout>
 
         <StackLayout VerticalOptions="Center" Margin="0, 70, 0, 0">
-            <Entry Placeholder="Логин" x:Name="Login" Text="{Binding UserLogin}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
-            <Entry Placeholder="Пароль" Margin="40, 30, 40, 40" Text="{Binding UserPassword}" x:Name="Password" IsPassword="True" BackgroundColor="#e8e8e8" HeightRequest="60"/>
+            <Entry Visual="Material" Placeholder="Логин" x:Name="Login" Text="{Binding UserLogin}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 30, 40, 0"/>
+            <Entry Visual="Material" Placeholder="Пароль" Margin="40, 30, 40, 40" Text="{Binding UserPassword}" x:Name="Password" IsPassword="True" BackgroundColor="#e8e8e8" HeightRequest="60"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal" Margin="30, 40, 50, 40">
-            <Button Text="Зарегистрироваться" CornerRadius="150" BackgroundColor="#00b2ff" TextColor="White" x:Name="BRegistration" WidthRequest="160" FontSize="12" Margin="0,5,11,0" Clicked="BReg_Clicked"/>
-            <Button Text="Войти" CornerRadius="200" BackgroundColor="#00b2ff" TextColor="White" x:Name="BLogin" HeightRequest="60" WidthRequest="149" FontSize="12" Margin="11,5,0,0" Clicked="BLogin_Clicked"/>
+            <Button Text="Зарегистрироваться" CornerRadius="150" BackgroundColor="#00b2ff" TextColor="White" x:Name="BRegistration" WidthRequest="160" FontSize="10" Margin="0,5,11,0" Clicked="BReg_Clicked"/>
+            <Button Text="Войти" CornerRadius="200" BackgroundColor="#00b2ff" TextColor="White" x:Name="BLogin" HeightRequest="60" WidthRequest="149" FontSize="10" Margin="11,5,0,0" Clicked="BLogin_Clicked"/>
         </StackLayout>
     </FlexLayout>
 

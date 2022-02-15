@@ -2,13 +2,11 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:local="clr-namespace:App1"
-            x:Class="App1.Pages.TabsPage">
-    <NavigationPage.TitleView>
-        <StackLayout Orientation="Horizontal">
-            <Label Text="Проект 1" Margin="90, 0, 120, 0" FontSize="20" TextColor="White" HorizontalOptions="Center"/>
-            <ImageButton Source="edit.png" WidthRequest="25" HeightRequest="25" Margin="0, 0, 12, 0" BackgroundColor="Transparent" Clicked="ImageButton_Clicked"/>
-        </StackLayout>
-    </NavigationPage.TitleView>
+            x:Class="App1.Pages.TabsPage"
+            Title="{Binding Name}">
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem IconImageSource="edit.png" Priority="0" Order="Primary" x:Name="Edit" Clicked="Edit_Clicked"/>
+    </TabbedPage.ToolbarItems>
     <TabbedPage.Children>
         <local:InfoProjectPage Title="О проекте"/>
         <local:ImgProjectPage Title="Картинки"/>

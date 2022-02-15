@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App1.Pages.AddProjectPage">
+             x:Class="App1.Pages.AddProjectPage"
+             Visual="Default">
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal">
             <Label Margin="60, 0, 0, 0" FontSize="20" Text="Создать проект" TextColor="White" HorizontalOptions="Center"/>
@@ -11,7 +12,7 @@
         <ScrollView>
             <StackLayout>
                 <StackLayout VerticalOptions="Center" Margin="0, 15, 0, 0">
-                    <Entry Placeholder="Имя проекта" PlaceholderColor="Gray"  x:Name="ProjectName" TextColor="Black" Text="{Binding ProjectName}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 7, 40, 0"/>
+                    <Entry  Placeholder="Имя проекта" PlaceholderColor="Gray"  x:Name="ProjectName" TextColor="Black" Text="{Binding ProjectName}" BackgroundColor="#e8e8e8" HeightRequest="60" Margin="40, 7, 40, 0"/>
                     <Editor BackgroundColor="#e8e8e" HeightRequest="200" Placeholder="Описание" x:Name="Title" TextColor="Black" Text="{Binding ProjectTitle}" PlaceholderColor="Gray" Margin="40,15, 40, 0"/>
                     <Entry Placeholder="Телефон №1" Margin="40,15,40,0" PlaceholderColor="Gray" TextColor="Black" Text="{Binding UserPhoneOne}" x:Name="PhoneOne" BackgroundColor="#e8e8e8" HeightRequest="60"/>
                     <Entry Placeholder="Email" Margin="40,20,40,0" PlaceholderColor="Gray" TextColor="Black" Text="{Binding UserEmail}" x:Name="Email" BackgroundColor="#e8e8e8" HeightRequest="60"/>
